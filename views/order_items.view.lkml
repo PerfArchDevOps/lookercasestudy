@@ -100,7 +100,7 @@ view: order_items {
   measure: total_sales {
     type: sum
     label: "Total Sales Price"
-    value_format: "usd"
+    value_format_name: usd
     sql: ${TABLE}."SALE_PRICE" ;;
   }
 
