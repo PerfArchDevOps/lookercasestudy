@@ -16,8 +16,6 @@ view: etl_jobs {
       time,
       date,
       week,
-      month,
-      quarter,
       year
     ]
     sql: ${TABLE}."COMPLETED_AT" ;;
