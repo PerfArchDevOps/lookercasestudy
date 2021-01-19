@@ -22,7 +22,6 @@ view: inventory_items {
       date,
       week,
       month,
-      quarter,
       year
     ]
     sql: ${TABLE}."CREATED_AT" ;;

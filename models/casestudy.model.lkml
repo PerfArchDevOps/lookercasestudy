@@ -10,6 +10,8 @@ datagroup: casestudy_default_datagroup {
 
 persist_with: casestudy_default_datagroup
 
+
+
 explore: distribution_centers {}
 
 explore: etl_jobs {}
@@ -71,3 +73,13 @@ explore: products {
 }
 
 explore: users {}
+
+test: users_exist {
+  explore_source: users {
+     column: count {}
+    limit: 1
+  }
+  assert: users_exist {
+    expression: ${users.count} > 1 ;;
+  }
+}
